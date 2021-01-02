@@ -13,13 +13,9 @@ $font-family-numbers: "Josefin Sans", sans-serif;
 $font-size-base: 1rem !default;
 $font-size-h1: 2rem !default;
 $font-weight-strong: 600;
-$text-color: #fff !default;
-$bg-color: rgba(43, 45, 47, 1);
-$card-bg-color: linear-gradient(
-  145deg,
-  rgba(115, 115, 115, 0.15) 15%,
-  rgba(43, 45, 47, 1) 80%
-);
+$text-color: #000 !default;
+$bg-color: #fff;
+$card-bg-color: #fff;
 $primary-color: #ff073a;
 
 /* General */
@@ -65,7 +61,7 @@ a {
 }
 
 .highlight-link {
-  box-shadow: inset 0 -0.125rem 0 $primary-color;
+
   box-sizing: border-box;
   color: $primary-color;
   display: inline-block;
@@ -88,7 +84,6 @@ a {
 
 .layout .card {
   background: $card-bg-color;
-  border-radius: 2rem;
   margin: 3rem 0;
   padding: 1rem 2rem;
 }
@@ -107,13 +102,7 @@ a {
 }
 
 .neumorphism-button {
-  background: linear-gradient(
-    145deg,
-    rgba(100, 100, 105, 0.15) 15%,
-    rgba(33, 33, 33, 0.4) 80%
-  );
-  box-shadow: -4px -3px 2px 0 rgba(250, 250, 250, 0.13),
-    4px 4px 2px 0 rgba(0, 0, 0, 0.4);
+    background: #fff;
 }
 
 @mixin neumorphism-button-pressed {
@@ -122,18 +111,13 @@ a {
     rgba(20, 20, 20, 0.4) 10%,
     rgba(115, 115, 115, 0.15) 80%
   );
-  box-shadow: 1px 1px 2px 0 rgba(210, 210, 210, 0.4),
-    -1px -1px 2px rgba(0, 0, 0, 0.4), inset 3px 3px 2px 0 rgba(0, 0, 0, 0.4),
-    inset -1px -2px 2px rgba(210, 210, 210, 0.4);
+
 }
 
 .neumorphism-card {
-  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 1),
-    inset -2px -2px 4px rgba(99, 99, 99, 1);
 }
 
 .neumorphism-card-big {
-  box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
 }
 
 /* Preloader */
@@ -545,14 +529,12 @@ a {
 
   .time {
     background: $bg-color;
-    border-radius: 0.5rem;
     display: inline-block;
     padding: .6rem;
   }
 
   .desc {
     background: $bg-color;
-    border-radius: 1rem;
     margin: 1em 0 0 0;
     padding: 0.75em;
     text-align: center;
@@ -562,7 +544,6 @@ a {
 /* Projects Card */
 
 .project {
-  border-radius: 1rem;
   margin: 1rem 0;
   padding: 0.5rem 1rem;
 }
@@ -591,7 +572,6 @@ a {
 }
 
 .tag {
-  border-radius: 0.5rem;
   display: inline-block;
   margin-bottom: 0.25rem;
   padding: 0.5rem;
@@ -705,7 +685,6 @@ a {
     }
 
     .filter-button {
-      border-radius: 0.5rem;
       cursor: pointer;
       display: unset;
       margin: 0 0.5rem 1rem;
