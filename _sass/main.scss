@@ -311,8 +311,52 @@ a {
   }
 }
 
+.ten-things-wrapper {
+display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.thing {
+  border-radius: 1rem;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  width: 1000px;
+}
+
+.thing .name-link-wrapper {
+  text-align: center;
+  justify-content: space-between;
+}
+
+.thing .name-link-wrapper .links {
+  font-size: 1.5rem;
+  margin: 1rem 0.5rem;
+}
+
+.thing-img-wrapper {
+    margin: 1rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thing-image {
+  border-radius: 0.5rem;
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  padding: 0.5rem;
+  width: 300px;
+  max-height: 400px;
+}
+
 
 /* Media Queries */
+@media only screen and (max-width: $small-screen) {
+    .thing-image {
+	max-width: 90%;
+  }
+
+}
 
 @media only screen and (min-width: $small-screen) {
   .layout {
@@ -326,89 +370,6 @@ a {
 
   .layout .card .description {
     font-size: 1.25rem;
-  }
-
-  .landing-title h1 {
-    font-size: 3rem;
-  }
-
-  .landing-icons .social-link {
-    width: 4rem;
-    height: 4rem;
-    line-height: 4rem;
-
-    .social {
-      font-size: 2rem;
-    }
-  }
-
-  #skills {
-    div[skill-weight="1"] {
-      font-size: 1rem;
-      line-height: 0rem;
-    }
-
-    div[skill-weight="2"] {
-      font-size: 2rem;
-      line-height: 1rem;
-    }
-
-    div[skill-weight="3"] {
-      font-size: 3rem;
-      line-height: 2rem;
-    }
-
-    div[skill-weight="4"] {
-      font-size: 4rem;
-      line-height: 3rem;
-    }
-
-    div[skill-weight="5"] {
-      font-size: 5rem;
-      line-height: 4rem;
-    }
-
-    .filter-button {
-      cursor: pointer;
-      display: unset;
-      margin: 0 0.5rem 1rem;
-      padding: 0.5rem 0.25rem;
-      text-align: center;
-      width: 21%;
-
-      &:hover {
-        letter-spacing: 0.25rem;
-      }
-    }
-
-    @mixin filter-out {
-      height: 0;
-      margin: 0;
-      opacity: 0;
-      padding: 0;
-      width: 0;
-    }
-
-    input[type="radio"]:checked + .filter-button {
-      color: $primary-color;
-      font-weight: $font-weight-strong;
-      @include neumorphism-button-pressed();
-    }
-
-    input[id="language"]:checked ~ div[skill-type="framework"],
-    input[id="language"]:checked ~ div[skill-type="tool"] {
-      @include filter-out;
-    }
-
-    input[id="framework"]:checked ~ div[skill-type="language"],
-    input[id="framework"]:checked ~ div[skill-type="tool"] {
-      @include filter-out;
-    }
-
-    input[id="tool"]:checked ~ div[skill-type="language"],
-    input[id="tool"]:checked ~ div[skill-type="framework"] {
-      @include filter-out;
-    }
   }
 
   .timeline-wrapper {
@@ -606,7 +567,6 @@ a {
   .layout {
     padding: 5rem 5rem;
   }
-
   #skills .filter-button {
     width: 22%;
   }
