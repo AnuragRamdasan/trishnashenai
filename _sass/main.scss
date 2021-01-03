@@ -18,7 +18,7 @@ $text-color: #000 !default;
 $bg-color: #fff;
 $card-bg-color: #fff;
 $primary-color: #77dd77;
-$alt-color: #836953;
+$alt-color: #ffd1dc;
 
 /* General */
 
@@ -33,6 +33,11 @@ html {
 }
 
 body {
+    height: 100%;
+    width: 100%;
+}
+
+section {
   height: 100%;
 }
 
@@ -92,14 +97,19 @@ a {
 .layout .card .title {
   text-align: center;
   position: relative;
+  top: 10%;
 }
 
 .layout .card .subtitle {
-  text-align: center;
+    text-align: center;
+    position: relative;
+    top: 10%;
 }
 
 .layout .card .description {
-  text-align: justify;
+    text-align: justify;
+    position: relative;
+    top: 20%;
 }
 
 .neumorphism-button {
@@ -176,6 +186,7 @@ a {
 /* Footer */
 
 .footer {
+    margin-top: -200px;
   background: $bg-color;
   color: $text-color;
   margin: 0.5rem;
@@ -346,68 +357,11 @@ a {
   }
 }
 
-/* Skills Section */
-
-#skills {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  div {
-    padding: 0.2rem;
-    transition: opacity 0.5s;
-  }
-
-  div[skill-type="language"] {
-    color: #e84a5f;
-  }
-
-  div[skill-type="framework"] {
-    color: #ff847c;
-  }
-
-  div[skill-type="tool"] {
-    color: #fecea8;
-  }
-
-  div[skill-weight="1"] {
-    font-size: 0.75rem;
-    line-height: 0.25rem;
-  }
-
-  div[skill-weight="2"] {
-    font-size: 1.25rem;
-    line-height: 0.75rem;
-  }
-
-  div[skill-weight="3"] {
-    font-size: 1.75rem;
-    line-height: 1.25rem;
-  }
-
-  div[skill-weight="4"] {
-    font-size: 2.25rem;
-    line-height: 1.75rem;
-  }
-
-  div[skill-weight="5"] {
-    font-size: 2.75rem;
-    line-height: 2.25rem;
-  }
-
-  input[type="radio"] {
-    display: none;
-  }
-
-  .filter-button {
-    display: none;
-  }
-}
 
 /* Timeline Section */
 
 .timeline-wrapper {
+    top: 30%;
   .timeline {
     list-style-type: none;
     padding: 0;
@@ -415,18 +369,10 @@ a {
   }
 
   .timeline:before {
-    background: linear-gradient(
-      to bottom,
-      #f3f3f3 0%,
-      #d5d5d5 8%,
-      #d5d5d5 92%,
-      #f3f3f3 100%
-    );
     content: " ";
     height: 100%;
     left: 50%;
     margin-left: -0.0675rem;
-    position: absolute;
     width: 0.125rem;
     z-index: -1;
   }
@@ -478,6 +424,10 @@ a {
     border-radius: 0.5rem;
     font-weight: $font-weight-strong;
     padding: 0.25rem 0.5rem;
+
+    img {
+	width: 100%;
+    }
 
     span {
       position: relative;
@@ -724,6 +674,7 @@ a {
     }
 
     .direction-l {
+	margin-left: 8em;
       float: left;
       text-align: right;
       width: 18.5rem;
@@ -750,7 +701,9 @@ a {
     }
 
     .direction-r {
-      text-align: left;
+	margin-right: 8em;
+	float: right;
+      text-align: right;
       width: 100%;
 
       .hexagon {
