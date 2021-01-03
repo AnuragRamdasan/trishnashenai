@@ -228,133 +228,6 @@ a {
 .landing-icons {
   display: flex;
   justify-content: center;
-
-  .social-link {
-    color: $text-color;
-    position: relative;
-    height: 3rem;
-    line-height: 3rem;
-    margin: 0.25rem;
-    width: 3rem;
-
-    .circle {
-      animation: outWaveOut 1s cubic-bezier(0.42, 0, 0.58, 1) forwards;
-      fill: none;
-      stroke-dasharray: 40;
-      transition: all 0.2s ease-in-out;
-    }
-
-    .social {
-      font-size: 1.5rem;
-      position: absolute;
-      top: 0px;
-      transition: all 0.5s ease-in-out;
-      width: 100%;
-    }
-
-    .social-svg {
-      fill: white;
-    }
-
-    .label {
-      display: none;
-    }
-
-    &:hover {
-      cursor: pointer;
-
-      .circle {
-        animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
-          colorBlackIcon 1s linear forwards;
-        fill: $text-color;
-        fill-opacity: 1;
-      }
-
-      .social-svg {
-        fill: #000;
-      }
-
-      .label {
-        display: unset !important;
-        position: relative;
-        top: -2rem;
-      }
-    }
-  }
-
-  .email:hover {
-    .circle {
-      animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
-        colorEmail 1s linear forwards;
-    }
-    .social-svg {
-      fill: #d44638;
-    }
-  }
-
-  .linkedin:hover {
-    .circle {
-      animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
-        colorLinkedin 1s linear forwards;
-    }
-    .social-svg {
-      fill: #007bb6;
-    }
-  }
-
-  .twitter:hover {
-    .circle {
-      animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
-        colorTwitter 1s linear forwards;
-    }
-    .social-svg {
-      fill: #1da1f2;
-    }
-  }
-
-  @keyframes outWaveIn {
-    to {
-      stroke-dasharray: 510;
-      stroke-width: 0.5rem;
-    }
-  }
-
-  @keyframes outWaveOut {
-    from {
-      stroke: $text-color;
-      stroke-dasharray: 510;
-      stroke-width: 0.5rem;
-    }
-    to {
-      stroke: $text-color;
-      stroke-dasharray: 83;
-      stroke-width: 0.5rem;
-    }
-  }
-
-  @keyframes colorBlackIcon {
-    to {
-      stroke: #000;
-    }
-  }
-
-  @keyframes colorEmail {
-    to {
-      stroke: #b23121;
-    }
-  }
-
-  @keyframes colorLinkedin {
-    to {
-      stroke: #007bb6;
-    }
-  }
-
-  @keyframes colorTwitter {
-    to {
-      stroke: #1da1f2;
-    }
-  }
 }
 
 
@@ -381,39 +254,6 @@ a {
     padding: 1rem 0;
   }
 
-  .hexagon {
-    background: $primary-color;
-    height: 0.5rem;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    right: 0;
-    top: -0.8rem;
-    width: 1rem;
-  }
-
-  .hexagon:before,
-  .hexagon:after {
-    border-left: 2rem solid transparent;
-    border-right: 2rem solid transparent;
-    border-left-width: 0.5rem;
-    border-right-width: 0.5rem;
-    content: "";
-    left: 0;
-    position: absolute;
-  }
-
-  .hexagon:before {
-    border-bottom: 0.25rem solid $primary-color;
-    top: -0.25rem;
-  }
-
-  .hexagon:after {
-    border-top: 0.25rem solid $primary-color;
-    bottom: -0.25rem;
-  }
-
   .flag-wrapper {
     position: relative;
     text-align: center;
@@ -424,10 +264,6 @@ a {
     border-radius: 0.5rem;
     font-weight: $font-weight-strong;
     padding: 0.25rem 0.5rem;
-
-    img {
-	width: 100%;
-    }
 
     span {
       position: relative;
@@ -475,92 +311,6 @@ a {
   }
 }
 
-/* Projects Card */
-
-.project {
-  margin: 1rem 0;
-  padding: 0.5rem 1rem;
-}
-
-.project .name-link-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.project .name-link-wrapper .links {
-  font-size: 1.5rem;
-  margin: 1rem 0.5rem;
-}
-
-.project-desc {
-  line-height: 1rem;
-}
-
-.project-stars-forks {
-  fill: $text-color;
-  font-family: $font-family-numbers;
-}
-
-.tag-wrapper {
-  margin: 1rem 0 0 0;
-}
-
-.tag {
-  display: inline-block;
-  margin-bottom: 0.25rem;
-  padding: 0.5rem;
-}
-
-/* Contact Card */
-
-.contact-icons {
-  display: flex;
-  justify-content: center;
-
-  .social-link {
-    position: relative;
-    height: 3rem;
-    line-height: 3rem;
-    margin: 0.25rem;
-    text-align: center;
-    width: 3rem;
-
-    .social {
-      font-size: 1.5rem;
-    }
-
-    .social-svg {
-      fill: $primary-color;
-    }
-
-    &:hover {
-      cursor: pointer;
-      animation: jump 1s infinite alternate;
-
-      .social-svg {
-        fill: $text-color;
-      }
-    }
-  }
-
-  .black:hover {
-    .social-svg {
-      fill: #000;
-    }
-  }
-
-  .linkedin:hover {
-    .social-svg {
-      fill: #007bb6;
-    }
-  }
-
-  .twitter:hover {
-    .social-svg {
-      fill: #1da1f2;
-    }
-  }
-}
 
 /* Media Queries */
 
@@ -690,6 +440,41 @@ a {
         text-align: right;
       }
 
+      .flag {
+	  .picture-container {
+	      position: relative;
+	      height: 500px;
+	      width: 100%;
+	      min-width: 400px;
+
+	      .polaroid:after {
+		  position: absolute;
+		  bottom: 0px;
+		  left: 0px;
+		  width: calc(100% - 20px);
+		  padding: 10px;
+	      }
+
+	      .polaroid {
+		  position: absolute;
+		  border: 1px solid darkgrey;
+		  background-color: white;
+		  padding: 15px 15px 60px 15px;
+		  box-shadow: 5px 10px 10px darkgrey;
+		  transform: rotate(-10deg);
+		  -ms-transform: rotate(-10deg);
+		  -webkit-transform: rotate(-10deg);
+		  top: 10%;
+
+		  img {
+		      left: 100px;
+		      top: 100px;
+		      width: 100%;
+		  }
+	      }
+	  }
+      }
+
       .time-wrapper {
         float: left;
         margin-top: -0.1rem;
@@ -715,6 +500,41 @@ a {
       .flag-wrapper {
         display: inline-block;
         text-align: left;
+
+	.flag {
+	    .picture-container {
+		position: relative;
+		height: 500px;
+		width: 100%;
+		min-width: 400px;
+
+		.polaroid:after {
+		    position: absolute;
+		    bottom: 0px;
+		    left: 0px;
+		    width: calc(100% - 20px);
+		    padding: 10px;
+		}
+
+		.polaroid {
+		    position: absolute;
+		    border: 1px solid darkgrey;
+		    background-color: white;
+		    padding: 15px 15px 60px 15px;
+		    box-shadow: 5px 10px 10px darkgrey;
+		    transform: rotate(10deg);
+		    -ms-transform: rotate(10deg);
+		    -webkit-transform: rotate(10deg);
+		    top: 10%;
+
+		    img {
+			left: 100px;
+			top: 100px;
+			width: 100%;
+		    }
+		}
+	    }
+	}
       }
 
       .time-wrapper {

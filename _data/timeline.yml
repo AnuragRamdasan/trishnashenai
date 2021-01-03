@@ -17,44 +17,33 @@
 #     - tag: Rails
 #   timeline-side: right
 
-- img: assets/img/uni.png
-  date: Sep 2019 - Present
-  subtitle: Fullstack Developer
-  tags:
-    - tag: React
-    - tag: Javascript
-    - tag: Ruby
-    - tag: Rails
+- img: assets/img/tanuja.jpg
+  date: October 18, 1996
+  quote: Two gol gummats
+  by: Tanuja
   timeline-side: left
 
-- img: assets/img/uni.png
-  title-url: https://example.com/
-  date: Mar 2019 - Sep 2019
-  subtitle: Software Engineer as Intern
-  tags:
-    - tag: Flutter
-    - tag: Dart
-    - tag: Keycloak
+- img: assets/img/tanuja.jpg
+  date: October 18, 1996
+  quote: TWO GOL GUMMATTS
+  by: Tanuja
   timeline-side: right
 
 - img: assets/img/uni.png
-  title-url: https://example.com/
   date: 2017 - 2019
-  subtitle: M.Sc. Computer Science
+  quote: M.Sc. Computer Science
   timeline-side: left
 
 - img: assets/img/uni.png
-  title-url: https://example.com/
   date: Sep 2017 - Mar 2019
-  subtitle: Front-End Developer as Intern
+  quote: Front-End Developer as Intern
   tags:
     - tag: React
     - tag: Node
     - tag: Javascript
-  timeline-side: left
+  timeline-side: right
 
 - img: assets/img/uni.png
-  title-url: https://example.com/
   date: 2014 - 2017
-  subtitle: B.A. Computer Science
-  timeline-side: right
+  quote: B.A. Computer Science
+  timeline-side: left

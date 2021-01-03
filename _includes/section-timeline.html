@@ -10,24 +10,20 @@ Here's what people that have had to deal with Trishna say about her.
         <li>
           <div class="direction-l">
             <div class="flag-wrapper">
-              <span class="flag neumorphism-button" data-aos="zoom-in-left">
-	      	      <img src={{event.img}} />
-              </span>
               <span class="time-wrapper" data-aos="zoom-in-right">
                 <span class="time neumorphism-card">{{event.date}}</span>
               </span>
-            </div>
-            <div class="desc neumorphism-card" data-aos="zoom-in-right">
-              {{event.subtitle}}
-              {% if event.tags %}
-                <div class="tag-wrapper">
-                  {% for tag in event.tags %}
-                    <span class="tag neumorphism-card">{{tag.tag}}</span>
-                  {% endfor %}
-                </div>
-              {% endif %}
+	      <span class="flag neumorphism-button" data-aos="zoom-in-left">
+		<div class="picture-container">
+		  <div class="polaroid">
+		    <img src={{event.img}} />
+		    "{{event..quote}}" - {{event.by}}
+		  </div>
+		</div>
+              </span>
             </div>
           </div>
+	 <hr/>
         </li>
       {% endif %}
 
@@ -35,24 +31,20 @@ Here's what people that have had to deal with Trishna say about her.
         <li>
           <div class="direction-r">
             <div class="flag-wrapper">
-              <span class="flag neumorphism-button" data-aos="zoom-in-left">
-	      	      <img src={{event.img}} />
-              </span>
-              <span class="time-wrapper" data-aos="zoom-in-left">
+	      <span class="time-wrapper" data-aos="zoom-in-left">
                 <span class="time neumorphism-card">{{event.date}}</span>
               </span>
-            </div>
-            <div class="desc neumorphism-card" data-aos="zoom-in-left">
-              {{event.subtitle}}
-              {% if event.tags %}
-                <div class="tag-wrapper">
-                  {% for tag in event.tags %}
-                    <span class="tag neumorphism-card">{{tag.tag}}</span>
-                  {% endfor %}
-                </div>
-              {% endif %}
+              <span class="flag neumorphism-button" data-aos="zoom-in-left">
+		<div class="picture-container">
+	      	  <div class="polaroid">
+		    <img src={{event.img}} />
+		    "{{event..quote}}" - {{event.by}}
+		  </div>
+		</div>
+              </span>
             </div>
           </div>
+	  <hr/>
         </li>
       {% endif %}
     {% endfor %}
