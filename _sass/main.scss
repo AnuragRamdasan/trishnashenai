@@ -18,7 +18,7 @@ $text-color: #000 !default;
 $bg-color: #fff;
 $card-bg-color: #fff;
 $primary-color: #77dd77;
-$alt-color: #ffd1dc;
+$alt-color:  #8b6fbf;
 
 /* General */
 
@@ -98,6 +98,7 @@ a {
   text-align: center;
   position: relative;
   top: 10%;
+  color: $alt-color;
 }
 
 .layout .card .subtitle {
@@ -329,6 +330,7 @@ display: flex;
   justify-content: space-between;
 }
 
+
 .thing .name-link-wrapper .links {
   font-size: 1.5rem;
   margin: 1rem 0.5rem;
@@ -336,8 +338,9 @@ display: flex;
 
 .thing-img-wrapper {
     margin: 1rem 0 0 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 32%));
+    column-gap: 1%;
 }
 
 .thing-image {
@@ -355,7 +358,9 @@ display: flex;
     .thing-image {
 	max-width: 90%;
   }
-
+    .thing-img-wrapper {
+	display: block;
+    }
 }
 
 @media only screen and (min-width: $small-screen) {
