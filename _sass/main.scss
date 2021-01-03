@@ -2,13 +2,14 @@
 
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+@import url("https://use.typekit.net/tqj2wrv.css");
 
 /* Variables */
 
 $small-screen: 48em !default;
 $medium-screen: 62em !default;
 $large-screen: 75em !default;
-$font-family: "Raleway", sans-serif;
+$font-family: "museo-sans";
 $font-family-numbers: "Josefin Sans", sans-serif;
 $font-size-base: 1rem !default;
 $font-size-h1: 2rem !default;
@@ -16,7 +17,8 @@ $font-weight-strong: 600;
 $text-color: #000 !default;
 $bg-color: #fff;
 $card-bg-color: #fff;
-$primary-color: #ff073a;
+$primary-color: #77dd77;
+$alt-color: #836953;
 
 /* General */
 
@@ -57,7 +59,6 @@ a {
 
 .highlight-title {
   color: $primary-color;
-  text-shadow: 0.25rem 0.25rem 0.25rem $primary-color;
 }
 
 .highlight-link {
@@ -141,35 +142,18 @@ a {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 6rem;
+    width: 10rem;
+    height: 10rem;
   }
 
-  .load hr {
-    animation: spin 2s ease infinite;
+  .load img {
+      animation: rotation 2s infinite linear;
     border: 0;
-    height: 40%;
+    height: 100%;
     margin: 0;
     position: absolute;
-    width: 40%;
-  }
-
-  .load :first-child {
-    animation-delay: -1.5s;
-    background: $text-color;
-  }
-
-  .load :nth-child(2) {
-    animation-delay: -1s;
-    background: $primary-color;
-  }
-
-  .load :nth-child(3) {
-    animation-delay: -0.5s;
-    background: $text-color;
-  }
-
-  .load :last-child {
-    background: $primary-color;
+    width: 100%;
+    background: #fff;
   }
 
   @keyframes spin {
@@ -766,9 +750,8 @@ a {
     }
 
     .direction-r {
-      float: right;
       text-align: left;
-      width: 18.5rem;
+      width: 100%;
 
       .hexagon {
         left: -1.6rem;
@@ -887,5 +870,14 @@ a {
   }
   100% {
     bottom: 0;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
   }
 }

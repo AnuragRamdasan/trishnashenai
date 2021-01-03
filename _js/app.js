@@ -10,14 +10,6 @@ $(document).ready(function() {
   /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
   particlesJS.load('landing', 'assets/particles.json', function() {});
 
-  // Typing Text
-  var element = document.getElementById('txt-rotate');
-  var toRotate = element.getAttribute('data-rotate');
-  var period = element.getAttribute('data-period');
-  setTimeout(function() {
-    new TxtRotate(element, JSON.parse(toRotate), period);
-  }, 1500);
-
   // INJECT CSS
   var css = document.createElement('style');
   css.type = 'text/css';
@@ -33,8 +25,6 @@ $(document).ready(function() {
     delay: 100,
     once: true
   });
-
-  randomizeOrder();
 });
 
 /* FUNCTIONS */
@@ -57,9 +47,9 @@ function fadeOutPreloader(element, duration) {
 
       clearInterval(interval);
     } else {
-      opacity -= 0.1;
+	opacity -= 0.03;
       element.style.opacity = opacity;
-      element.style.filter = 'alpha(opacity = ' + opacity * 100 + ')';
+	element.style.filter = 'alpha(opacity = ' + opacity * 100 + ')';
     }
   }, duration);
 }
@@ -107,17 +97,3 @@ TxtRotate.prototype.tick = function() {
     that.tick();
   }, delta);
 };
-
-/* Word Cloud */
-
-function randomizeOrder() {
-  var parent = document.getElementById('skills');
-  var divs = parent.getElementsByTagName('div');
-  var frag = document.createDocumentFragment();
-
-  // Randomize order of skills
-  while (divs.length) {
-    frag.appendChild(divs[Math.floor(Math.random() * divs.length)]);
-  }
-  parent.appendChild(frag);
-}
