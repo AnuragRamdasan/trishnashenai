@@ -10,14 +10,14 @@ Here's what people that have had to deal with Trishna say about her.
         <li>
           <div class="direction-l">
             <div class="flag-wrapper">
-              <span class="time-wrapper" data-aos="zoom-in-right">
-                <span class="time neumorphism-card">{{event.date}}</span>
+              <span class="time-wrapper">
+                <span class="time neumorphism-card">{{event.date}} with {{event.by}}</span>
               </span>
-	      <span class="flag neumorphism-button" data-aos="zoom-in-left">
-		<div class="picture-container">
+	      <span class="flag">
+		<div class="picture-container" data-aos="zoom-in-right" data-aos-duration="3000">
 		  <div class="polaroid">
 		    <img src={{event.img}} />
-		    "{{event..quote}}" - {{event.by}}
+		    {{event.quote}}
 		  </div>
 		</div>
               </span>
@@ -31,14 +31,14 @@ Here's what people that have had to deal with Trishna say about her.
         <li>
           <div class="direction-r">
             <div class="flag-wrapper">
-	      <span class="time-wrapper" data-aos="zoom-in-left">
-                <span class="time neumorphism-card">{{event.date}}</span>
+	      <span class="time-wrapper">
+                <span class="time neumorphism-card">{{event.date}} with {{event.by}}</span>
               </span>
-              <span class="flag neumorphism-button" data-aos="zoom-in-left">
+              <span class="flag">
 		<div class="picture-container">
-	      	  <div class="polaroid">
+	      	  <div class="polaroid" data-aos="zoom-in-left" data-aos-duration="3000">
 		    <img src={{event.img}} />
-		    "{{event..quote}}" - {{event.by}}
+		    {{event.quote}}
 		  </div>
 		</div>
               </span>

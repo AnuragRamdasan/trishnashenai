@@ -23,7 +23,6 @@ $(document).ready(function() {
     duration: 600,
     easing: 'ease-in-sine',
     delay: 100,
-    once: true
   });
 });
 
@@ -48,7 +47,7 @@ function fadeOutPreloader(element, duration) {
       clearInterval(interval);
     } else {
 	opacity -= 0.03;
-      element.style.opacity = opacity;
+	element.style.opacity = opacity;
 	element.style.filter = 'alpha(opacity = ' + opacity * 100 + ')';
     }
   }, duration);
