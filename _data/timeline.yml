@@ -17,22 +17,28 @@
 #     - tag: Rails
 #   timeline-side: right
 
+- img: assets/img/mom.png
+  date: 1996
+  quote: I'm very proud to be her mom. She expresses all her feelings without any hesitation. We both have great bonding. So many times I have learnt things from her. I feel we are more like friends. I want her to be happy always. I love you, Shony!
+  by: Trishna's Mom
+  timeline-side: left
+
 - img: assets/img/tanuja.jpg
   date: October 18, 1996
   quote: Two gol gummats
   by: Tanuja
-  timeline-side: left
+  timeline-side: right
 
 - img: assets/img/dadu.png
   date: Nov 14th, 2020
   quote: “When you are joyful, when you say yes to life and have fun and project positivity all around you, you become a sun in the center of every constellation, and people want to be near you.” - Shannon L. Alder
   by: Dadu
-  timeline-side: right
+  timeline-side: left
 
 - img: assets/img/uni.png
   date: 2017 - 2019
   quote: M.Sc. Computer Science
-  timeline-side: left
+  timeline-side: right
 
 - img: assets/img/uni.png
   date: Sep 2017 - Mar 2019
@@ -41,9 +47,9 @@
     - tag: React
     - tag: Node
     - tag: Javascript
-  timeline-side: right
+  timeline-side: left
 
 - img: assets/img/uni.png
   date: 2014 - 2017
   quote: B.A. Computer Science
-  timeline-side: left
+  timeline-side: right
