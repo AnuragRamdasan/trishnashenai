@@ -17,10 +17,43 @@
 #     - tag: Rails
 #   timeline-side: right
 
-- img: assets/img/mom.png
-  date: 1996
-  quote: I'm very proud to be her mom. She expresses all her feelings without any hesitation. We both have great bonding. So many times I have learnt things from her. I feel we are more like friends. I want her to be happy always. I love you, Shony!
-  by: Trishna's Mom
+
+- img: assets/img/dadu.png
+  date: Nov 14th, 2020
+  quote: “When you are joyful, when you say yes to life and have fun and project positivity all around you, you become a sun in the center of every constellation, and people want to be near you.” - Shannon L. Alder
+  by: Dadu
+  timeline-side: right
+
+- img: assets/img/gauri.jpeg
+  date: Oct 25th, 2020
+  quote: I feel a sisterly love for you as the years have gone by and I've gotten to know you better. You're an amazing person and you deserve nothing but the best in life. Looking forward to many more amazing times with you in the years to come!
+  by: Gauri
+  timeline-side: left
+
+- img: assets/img/preithvi,jpeg
+  date: 21st November, 2018
+  quote: todo
+  by: Sanchita
+  timeline-side: right
+
+
+- img: assets/img/sanchita.png
+  date: 21st November, 2018
+  quote: I remember sleeping with her in the room a night before my wedding talking about how life is changing and she was just there being my biggest support. Trishna was the one who sat with me in my car to the wedding venue and we held hands as I was nervous and excited at the same time. She had a rubber band around her wrist while wearing ethnic and we shared a small laughter - some things never change - we will never change!
+  by: Sanchita
+  timeline-side: left
+
+
+- img: assets/img/nidhi.png
+  date: Sep 2017
+  quote: Thank you for being my family every single time I needed you. From knowing you as the girl you loves butter chicken and chips with rice to this bombshell you are, we’ve seen some shit in life. Kudos to you my love for always being so strong and pulling yourself through every single time. I love you sooooooo much. Chase your dreams girl -  I’m very very proud of you.
+  by: Nidhi
+  timeline-side: right
+
+- img: assets/img/gaurav.jpeg
+  date: Dec 2013
+  quote: when we met over ten years ago, I would never have imagined we would go on to become best friends. But God has His own plans, and I love that He was kind enough to let me find someone like you. Thank you for being around and always.. You hold great value in my life. Thank you for touching my life and adding great colour to it. You are awesome
+  by: Gaurav
   timeline-side: left
 
 - img: assets/img/tanuja.jpg
@@ -29,27 +62,8 @@
   by: Tanuja
   timeline-side: right
 
-- img: assets/img/dadu.png
-  date: Nov 14th, 2020
-  quote: “When you are joyful, when you say yes to life and have fun and project positivity all around you, you become a sun in the center of every constellation, and people want to be near you.” - Shannon L. Alder
-  by: Dadu
+- img: assets/img/mom.png
+  date: 1996
+  quote: I'm very proud to be her mom. She expresses all her feelings without any hesitation. We both have great bonding. So many times I have learnt things from her. I feel we are more like friends. I want her to be happy always. I love you, Shony!
+  by: Trishna's Mom
   timeline-side: left
-
-- img: assets/img/uni.png
-  date: 2017 - 2019
-  quote: M.Sc. Computer Science
-  timeline-side: right
-
-- img: assets/img/uni.png
-  date: Sep 2017 - Mar 2019
-  quote: Front-End Developer as Intern
-  tags:
-    - tag: React
-    - tag: Node
-    - tag: Javascript
-  timeline-side: left
-
-- img: assets/img/uni.png
-  date: 2014 - 2017
-  quote: B.A. Computer Science
-  timeline-side: right
