@@ -106,12 +106,16 @@ a {
     text-align: center;
     position: relative;
     top: 10%;
+    width: 60%;
+    margin: auto;
 }
 
 .layout .card .description {
     text-align: justify;
     position: relative;
     top: 20%;
+    width: 60%;
+    margin: auto;
 }
 
 .neumorphism-button {
@@ -522,6 +526,14 @@ display: flex;
   }
 }
 
+.cherry {
+    width: 100%;
+
+    .embed {
+	display: block;
+	margin: auto;
+    }
+}
 @media only screen and (min-width: $medium-screen) {
   .layout {
     padding: 3rem 3rem;
