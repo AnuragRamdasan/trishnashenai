@@ -18,6 +18,12 @@
 #   timeline-side: right
 
 
+- img: assets/img/anurag.png
+  date: Dec 26th, 2020
+  quote: "3000, top and bottom, MG, Shay, Cardi, bebo, gabdu, apsara, kandi, snow, glenns, parks, sunny, community, trouble. Here's to many more!"
+  by: Anurag
+  timeline-side: left
+
 - img: assets/img/dadu.png
   date: Nov 14th, 2020
   quote: “When you are joyful, when you say yes to life and have fun and project positivity all around you, you become a sun in the center of every constellation, and people want to be near you.” - Shannon L. Alder
@@ -36,50 +42,56 @@
   by: Gauri
   timeline-side: right
 
+- img: assets/img/zahoor.png
+  date: November, 2019
+  quote: So we were all at echoes and I remember most of us being blazed AF, and from whatever I can remember Trish was there, rock solid, taking care of us. Even if any of us were low at some point at the festival, she would come not say anything but just be there besides you and then her vibe is such that it pulls you out of the slump! It's been a pleasure knowing you Gae!
+  by: Zahoor
+  timeline-side: left
+
 - img: assets/img/preithvi.png
   date: 21st November, 2018
   quote: todo
   by: Preithvi
-  timeline-side: left
+  timeline-side: right
 
 - img: assets/img/sanchita.png
   date: 21st November, 2018
   quote: I remember sleeping with her in the room a night before my wedding talking about how life is changing and she was just there being my biggest support. Trishna was the one who sat with me in my car to the wedding venue and we held hands as I was nervous and excited at the same time. She had a rubber band around her wrist while wearing ethnic and we shared a small laughter - some things never change - we will never change!
   by: Sanchita
-  timeline-side: right
+  timeline-side: left
 
 - img: assets/img/nidhi.png
   date: Sep 2017
   quote: Thank you for being my family every single time I needed you. From knowing you as the girl you loves butter chicken and chips with rice to this bombshell you are, we’ve seen some shit in life. Kudos to you my love for always being so strong and pulling yourself through every single time. I love you sooooooo much. Chase your dreams girl -  I’m very very proud of you.
   by: Nidhi
-  timeline-side: left
+  timeline-side: right
 
 - img: assets/img/gaurav.jpeg
   date: Dec 2013
   quote: when we met over ten years ago, I would never have imagined we would go on to become best friends. But God has His own plans, and I love that He was kind enough to let me find someone like you. Thank you for being around and always.. You hold great value in my life. Thank you for touching my life and adding great colour to it. You are awesome
   by: Gaurav
-  timeline-side: right
+  timeline-side: left
 
 - img: assets/img/namrata.png
   date: 2013
   quote: when we met over ten years ago, I would never have imagined we would go on to become best friends. But God has His own plans, and I love that He was kind enough to let me find someone like you. Thank you for being around and always.. You hold great value in my life. Thank you for touching my life and adding great colour to it. You are awesome
   by: Namrata
-  timeline-side: left
+  timeline-side: right
 
 - img: assets/img/zobiya.jpeg
   date: 2010
   quote: One of the best memories v hav...V laughed like crazy that day... Kya karti mai tere bina Trish!😘Though I've got bashed by u a million times, kabhi bura nahi lagta😝Jaldi shaadi kar ba ab🙏🏻
   by: Zobiya
-  timeline-side: right
+  timeline-side: left
 
 - img: assets/img/tanuja.jpg
   date: October 18, 1996
   quote: Two gol gummats
   by: Tanuja
-  timeline-side: left
+  timeline-side: right
 
 - img: assets/img/mom.png
   date: 1996
   quote: I'm very proud to be your mom. You express all your feelings without any hesitation. We both have great bonding. So many times I have learnt things from you. I feel we are more like friends. I want you to be happy always. I love you, Shony!
   by: Trishna's Mom
-  timeline-side: right
+  timeline-side: left
