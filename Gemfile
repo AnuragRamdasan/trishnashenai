@@ -5,3 +5,4 @@ gem "github-pages"
 gem "jekyll"
 gem "jekyll-github-metadata"
 gem 'jekyll-seo-tag'
+gem 'jekyll-compress-images'
