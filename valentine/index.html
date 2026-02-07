@@ -616,6 +616,12 @@
           window.innerHeight / 2 + (Math.random() - 0.5) * 200
         );
       }
+    } else if (isFleeing) {
+      // Mobile-friendly: jump to random spot on tap
+      moveNoButton(
+        Math.random() * window.innerWidth,
+        Math.random() * window.innerHeight
+      );
     }
   }
 
