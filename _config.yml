@@ -2,12 +2,12 @@
 
 # GENERAL SITE SETTINGS
 # title: This will be displayed as the website's name in your browser tab.
-title: Trishna Shenai
+title: Trishna Ramdasan
 # description: This will be meta HTML tag content. This can be ignored.
-description: A loving birthday gift to Trishna Shenai from her fam! Find out why everyone loves Trishna!
-url: www.trishnashenai.com
+description: A loving birthday gift to Trishna Ramdasan from her fam! Find out why everyone loves Trishna!
+url: www.trishnaramdasan.com
 twitter:
-  username: "@trishnashenai"
+  username: "@trishnaramdasan"
   card: summary
 
 image:
@@ -18,7 +18,7 @@ baseurl: ""
 
 # LANDING PAGE
 # username: This will displayed on the landing page as your name.
-username: Trishna Shenai
+username: Trishna Ramdasan
 # typing_text: This will be typed before 'scroll down for more'.
 # > set this to your job title, e.g. Fullstack Developer
 typing_text: from everyone that loves you, to show exactly how much we love you.
